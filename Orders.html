@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <title>Faça seu pedido</title>
+  </head>
+  
+  <style>
+    
+    .Order{
+      background-color: white;
+      max-width: 100%;
+      padding: 1%;
+      display:flex;
+    }
+  
+    .Selector{
+      margin:2%; 
+      padding: 1%;
+      display:flex; 
+      background-color:#b4b4b4; 
+      border-radius: 10px;
+      max-width: 100%;
+    }
+    .Option{
+      background-color: white;
+      padding:10px;
+      margin:10px;
+      float: left;
+      cursor: pointer;
+      border-radius: 5px;
+      box-shadow: 3px 5px 3px #4b4b4b;
+      text-align: justify;
+    }
+
+    body{
+      background-color: #E5E5E5;
+      margin:0%;
+    }
+
+    header {
+    
+    background-color: #FCA311;
+    color: black;
+    padding: 10px 30px;
+    max-width:100%;
+    overflow: hidden;
+    text-align: center;
+           
+    }
+
+    #settings{
+      
+      position: left;
+      color: yellow;
+    
+    }
+
+    footer {
+
+      background-color: black;
+      color: white;
+      padding:30px;
+      max-width:100%;
+    }
+
+  </style>
+
+  <body>
+    
+    <header> 
+     <h1>Faça o seu pedido!</h1>
+    </header>
+    
+    <div class= "Selector">
+      
+      <h2>Carnes:</h2>
+
+      <p class="Option" type= "button" onclick='document.getElementById("meat").innerHTML = "Bife"'>Bife</p>
+      <p class="Option" type = "button" onclick='document.getElementById("meat").innerHTML = "Peixe"'>Peixe</p>
+
+    </div>
+
+    <div class= Selector>
+
+      <h2>Guarnições:</h2>
+
+      <p class="Option">Arroz.</p>
+      <p class="Option">Feijão.</p>
+
+    </div>
+    
+    <div class= Order>
+      
+      <h1>Pedido:</h1>
+      
+      <p id="garniture" class= Option> Guarnição </p>
+      <p id= "meat" class= Option> Carne </p>
+      <p id= "meat" class= Option> Carne</p>
+
+      <button style="background-color:#FCA311; border:none; border-radius: 10px;">Concluir</button>
+
+    </div>
+
+    <footer>
+      <pr>Olá kkk</pr>
+    </footer>
+  </body>
+
+</html>
